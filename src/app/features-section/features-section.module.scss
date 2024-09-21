@@ -1,0 +1,132 @@
+.Section {
+	margin-top: 80px;
+	flex-direction: column;
+	align-items: center;
+	// background-color: grey;
+	display: flex;
+	justify-content: center;
+	.HeaderTitle {
+		width: 400px;
+		height: 50px;
+		border-radius: 10px;
+		color: #ffffff;
+		text-transform: uppercase;
+		// text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		letter-spacing: var(--title-letter-spacing);
+		border: 1px solid var(--main-red);
+
+		h1 {
+			font-weight: 400;
+
+			.HiglitedText {
+				background: -webkit-linear-gradient(#ff9e83, #db3a0e);
+				background-clip: initial;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	.CardBox {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin-top: 80px;
+
+		.Card {
+			width: 360px;
+			height: 420px;
+			background-color: rgba(33, 30, 48, 0.7);
+			border-radius: 10px;
+			padding: 10px 15px;
+
+			.Header {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: space-around;
+				height: 40%;
+				.Title {
+					width: 150px;
+					height: 30px;
+					border: 1px solid rgba(217, 217, 217, 0.3);
+					color: rgb(217, 217, 217, 0.7);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-clip: padding-box;
+					border-radius: 5px;
+
+					h4 {
+						font-weight: 400;
+					}
+				}
+			}
+
+			.Header::after {
+				content: '';
+				height: 150%;
+				width: 40%;
+				background-image: radial-gradient(
+					closest-side,
+					rgba(219, 57, 14, 0.41),
+					#060318
+				);
+				position: absolute;
+				top: -30%;
+				left: 80%;
+				z-index: -1;
+			}
+
+			.Line {
+				border: 1px solid rgba(217, 217, 217, 0.3);
+			}
+
+			.BottomContent {
+				height: 40%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-top: 20px;
+
+				.TopText {
+					color: #ffffff;
+					letter-spacing: var(--letter-spacing);
+					// width: 70%;
+
+					h2 {
+						font-weight: 500;
+					}
+				}
+
+				.BottomText {
+					margin-top: 10px;
+					color: rgba(217, 217, 217, 0.7);
+
+					p {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	// .CardBox::before {
+	// 	content: '';
+	// 	height: 100%;
+	// 	width: 60%;
+	// 	background-image: radial-gradient(
+	// 		closest-side,
+	// 		rgba(219, 57, 14, 0.41),
+	// 		#060318
+	// 	);
+	// 	position: absolute;
+	// 	top: 20%;
+	// 	left: 70%;
+	// 	z-index: -1;
+	// }
+}

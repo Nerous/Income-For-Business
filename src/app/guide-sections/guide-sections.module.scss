@@ -1,0 +1,91 @@
+.SectionWithImageAndText {
+	margin-top: 80px;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	.HeaderTitle {
+		width: 320px;
+		height: 50px;
+		border-radius: 10px;
+		color: #ffffff;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		letter-spacing: var(--title-letter-spacing);
+
+		h1 {
+			font-weight: 400;
+
+			.HiglitedText {
+				background: -webkit-linear-gradient(#ff9e83, #db3a0e);
+				background-clip: initial;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	.MainContent {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 80px;
+		position: relative;
+		.ImgBox {
+			width: 50%;
+			height: 100%;
+
+			.Img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.robotImg {
+				position: absolute;
+				transform: scaleX(-1);
+				left: 30%;
+				top: 10%;
+			}
+		}
+
+		.TextBox {
+			width: 47%;
+			color: #ffffff;
+			letter-spacing: var(--letter-spacing);
+
+			.MainTitle {
+				h1 {
+					font-weight: 500;
+				}
+			}
+
+			.SecondaryTitle {
+				margin-top: 10px;
+				color: rgba(217, 217, 217, 0.7);
+				h2 {
+					font-weight: 400;
+				}
+			}
+
+			.MainText {
+				margin-top: 20px;
+				color: rgba(217, 217, 217, 0.7);
+				letter-spacing: var(--letter-spacing);
+				h4 {
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	.MainContent {
+		.robotImg {
+			width: 320px;
+			height: 300px;
+		}
+	}
+}

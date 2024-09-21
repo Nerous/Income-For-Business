@@ -1,0 +1,46 @@
+.TopSection {
+	padding: 0;
+	margin-top: 40px;
+	position: relative;
+	// position: relative;
+	// max-height: 900px;
+	// height: 40vh;
+
+	// .Img {
+	// 	width: 490px;
+	// 	height: 300px;
+	// 	// margin-bottom: 40px;
+	// }
+
+	.TextBox {
+		color: #ffffff;
+		font-size: 28px;
+		letter-spacing: 0.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		.HiglitedText {
+			color: var(--main-red);
+		}
+	}
+	.Elipse {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+}
+
+.TopSection::after {
+	content: '';
+	height: 130%;
+	width: 60%;
+	background-image: radial-gradient(
+		closest-side,
+		rgba(219, 57, 14, 0.41),
+		#060318
+	);
+	position: absolute;
+	top: -30%;
+	left: 70%;
+	z-index: -1;
+}

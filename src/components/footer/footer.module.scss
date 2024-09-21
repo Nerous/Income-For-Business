@@ -1,0 +1,54 @@
+.MainContainer {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 200px;
+	position: relative;
+
+	.RobotImg {
+		position: absolute;
+		right: 2%;
+		top: -15%;
+	}
+	.Line {
+		border: 1px solid rgba(217, 217, 217, 0.1);
+	}
+
+	.MainContent {
+		width: 100%;
+		margin-top: 40px;
+
+		.TopBox {
+			display: flex;
+			// flex-direction: row;
+			justify-content: space-between;
+
+			.RightSide {
+				height: 80px;
+				display: flex;
+				flex-direction: column;
+				// justify-content: space-between;
+				color: #ffffff;
+
+				.MediaLinks {
+					margin-top: 20px;
+					display: flex;
+					justify-content: space-between;
+				}
+			}
+		}
+		.BottomBox {
+			width: 100%;
+			.Copyright {
+				text-align: center;
+				color: #ffffff;
+
+				h4 {
+					font-weight: 600;
+					letter-spacing: var(--letter-spacing);
+				}
+			}
+		}
+	}
+}

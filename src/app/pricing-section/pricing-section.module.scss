@@ -1,0 +1,92 @@
+.PricingSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+
+	// background-color: grey;
+	.HeaderTitle {
+		color: #ffffff;
+		letter-spacing: var(--title-letter-spacing);
+		text-transform: uppercase;
+		margin-bottom: 40px;
+
+		h1 {
+			font-weight: 400;
+		}
+	}
+
+	.MainContainer {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+		.Card {
+			width: 410px;
+			height: 580px;
+			padding: 25px;
+			border: 1px solid rgba(217, 217, 217, 0.3);
+			border-radius: 20px;
+
+			.Top {
+				height: 20%;
+				color: #ffffff;
+				letter-spacing: 3px;
+
+				.MainTitle {
+					h1 {
+						font-weight: 700;
+					}
+				}
+
+				.SecondaryTitle {
+					margin-top: 10px;
+					color: rgba(217, 217, 217, 0.7);
+					h2 {
+						font-weight: 400;
+					}
+				}
+			}
+
+			.Bottom {
+				height: 80%;
+				// background-color: grey;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+
+				.Price {
+					font-size: 64px;
+					font-weight: 700;
+					color: #ffffff;
+					letter-spacing: 2px;
+				}
+
+				.ButtonBox {
+					.Button {
+						width: 100%;
+					}
+				}
+
+				.PacketInformation {
+					// background-color: grey;
+					width: 100%;
+					height: 30%;
+
+					ul {
+						list-style-position: inside;
+						height: 100%;
+
+						li {
+							color: rgba(217, 217, 217, 0.7);
+							letter-spacing: var(--letter-spacing);
+							font-weight: 400;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
